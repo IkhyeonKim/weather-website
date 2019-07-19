@@ -20,7 +20,7 @@ const forecast = (longitude, latitude, callback) => {
             // console.log(res.body.daily.data[0].summary)
             // console.log(`It is currently ${chalkBlue(temperature)} degrees out. There is a ${chalkGreen(rainChance)}% chance of rain`)
 
-            callback(undefined, `${summary} It is currently ${temperature} degrees out. There is a ${rainChance}% chance of rain`)
+            callback(undefined, `${summary} It is currently ${temperature} degrees out. There is a ${rainChance * 100}% chance of rain`)
         }
     })
 }
