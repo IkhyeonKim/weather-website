@@ -40,7 +40,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        message: 'I can help ya :)',
+        message: 'Click Weather tab :)',
         name: 'Ikhyeon'
     })
 })
